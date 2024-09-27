@@ -1,0 +1,9 @@
+<div class="scroll-to-top" *ngIf="contentOverflow">
+  <button type="button" class="btn" (click)="handleButtonClick()">
+    <i class="fas" [ngClass]="{'fa-chevron-up': scrollToTopMode, 'fa-chevron-down': !scrollToTopMode}"></i>
+  </button>
+</div>
+
+<div class="error-message" *ngIf="errorMessage">
+  {{ errorMessage }}
+</div>
